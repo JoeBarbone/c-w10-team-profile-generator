@@ -67,7 +67,7 @@ const getManager = () => {
         }
     ])
     .then(data => {
-        console.log(data);
+        //console.log(data);
         const manager = new Manager(data.name, data.id, data.email, data.office);
         team.push(manager);
         userMenu();
@@ -177,7 +177,7 @@ const getEngineer = () => {
         }
     ])
     .then(data => {
-        console.log(data);
+        //console.log(data);
         const engineer = new Engineer(data.name, data.id, data.email, data.githubName);
         team.push(engineer);
         userMenu();
@@ -254,7 +254,7 @@ const getIntern = () => {
         }
     ])
     .then(data => {
-        console.log(data);
+        //console.log(data);
         const intern = new Intern(data.name, data.id, data.email, data.school);
         team.push(intern);
         userMenu();
@@ -271,20 +271,10 @@ const buildTeam = () => {
 **********************
     `);
 
-    const writeToFile = fileContent => {
-        fs.writeFile("./dist/team.html", fileContent, err => {
-            if (err) {
-                return;
-            }
-
-            if (!err) {
-                return console.log("File Created Successfully");
-            }
-        });
-    }
-
-    var fileContent = generateTeamPage(team);
-    writeToFile(fileContent);
+    fs.writeFile("dist/index.html", generateTeamPage(team), (err) => {
+        if (err) throw err;
+        console.log("Team page created successfully");
+    })
 
 }
 

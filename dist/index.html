@@ -1,35 +1,4 @@
-var bodyHTML = "";
-function generateTeam(team) {
-    
 
-
-    
-    console.log(team[0].name);
-    const role = team[0].getRole();
-    console.log(`Role: ${role}`);
-
-    for (var i=0; i < team.length; i++) {
-
-        const role = team[i].getRole();
-
-        switch (role) {
-            case "Manager":
-                generateManager(team[i]);
-                break;
-
-            case "Engineer":
-                generateEngineer(team[i]);
-                break;
-            
-            case "Intern":
-                generateIntern(team[i]);
-                break;
-        }
-
-    }
-
-    
-    var htmlTemplate = `
     <!DOCTYPE html>
 
     <html lang="en">
@@ -52,27 +21,11 @@ function generateTeam(team) {
                 <h1 class="text-center">My Team</h1>
     
                 <div class="card-deck">
-                    ${bodyHTML}
-                </div>
-            </div>
-        </div>
-    </div>    
-    </body>
-
-    </html>
-    `;
-
-    return htmlTemplate;
-}
-
-
-function generateManager(manager) {
-
-    var managerHTML = `
+                    
     <div class="card">
         
         <div class="card-title bg-blue p-3">
-            ${manager.name} - ID: ${manager.id}
+            Joseph Barbone - ID: 0129
         
             <div class="card-subtitle p-3">
                 Manager
@@ -80,71 +33,65 @@ function generateManager(manager) {
         </div>
         
         <div class="card-body">
-            <p>email: ${manager.email}</p>
-            <p>office number: ${manager.office}</p>
+            <p>email: joe@comp.com</p>
+            <p>office number: 2323</p>
         </div>
 
     </div>
-    `;
-
-    bodyHTML += managerHTML;
-    return bodyHTML;
-
-}
-
-
-
-function generateEngineer(engineer) {
-
-    var engineerHTML = `
+    
     <div class="card">
         
     <div class="card-title bg-blue p-3">
-            ${engineer.name} - ID: ${engineer.id}
+            Bobby Francis - ID: 0330
         
             <div class="card-subtitle p-3">
                 Engineer
             </div>
         </div>
         <div class="card-body">
-            <p>Email: ${engineer.email}</p>
-            <p>GitHub: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
+            <p>Email: bobby@comp.com</p>
+            <p>GitHub: <a href="https://github.com/BobbyStep" target="_blank">BobbyStep</a></p>
         </div>
 
     </div>
-    `;
-
-    bodyHTML += engineerHTML;
-    return bodyHTML;
-
-}
-
-
-
-function generateIntern(intern) {
-
-    var internHTML = `
+    
     <div class="card">
         
     <div class="card-title bg-blue p-3">
-            ${intern.name} - ID: ${intern.id}
+            Jennifer Carter - ID: 1021
+        
+            <div class="card-subtitle p-3">
+                Engineer
+            </div>
+        </div>
+        <div class="card-body">
+            <p>Email: jennifer@comp.com</p>
+            <p>GitHub: <a href="https://github.com/GitItGirlJenny" target="_blank">GitItGirlJenny</a></p>
+        </div>
+
+    </div>
+    
+    <div class="card">
+        
+    <div class="card-title bg-blue p-3">
+            Emily Lauren - ID: 1130
         
             <div class="card-subtitle p-3">
                 Intern
             </div>
         </div>
         <div class="card-body">
-            <p>Email: ${intern.email}</p>
-            <p>School: ${intern.school}</p>
+            <p>Email: emily@comp.com</p>
+            <p>School: DSU</p>
         </div>
 
     </div>
-    `;
+    
+                </div>
+            </div>
+        </div>
+    </div>    
+    </body>
 
-    bodyHTML += internHTML;
-    return bodyHTML;
-
-}
-
-
-module.exports = generateTeam;
+    </html>
+    
