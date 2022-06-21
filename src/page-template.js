@@ -39,7 +39,7 @@ function generateTeam(team) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My Team</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
@@ -80,8 +80,8 @@ function generateManager(manager) {
         </div>
         
         <div class="card-body">
-            <p>email: ${manager.email}</p>
-            <p>office number: ${manager.office}</p>
+            <p><i class="fa-solid fa-envelope"></i> | <a href="mailto:${manager.email}">${manager.email}</a></p>
+            <p><i class="fa-solid fa-building-columns"></i> | ${manager.office}</p>
         </div>
 
     </div>
@@ -107,8 +107,8 @@ function generateEngineer(engineer) {
             </div>
         </div>
         <div class="card-body">
-            <p>Email: ${engineer.email}</p>
-            <p>GitHub: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
+            <p><i class="fa-solid fa-envelope"></i> | <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+            <p><i class="fa-brands fa-github-square"></i> | <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
         </div>
 
     </div>
@@ -134,8 +134,8 @@ function generateIntern(intern) {
             </div>
         </div>
         <div class="card-body">
-            <p>Email: ${intern.email}</p>
-            <p>School: ${intern.school}</p>
+            <p><i class="fa-solid fa-envelope"></i> | <a href="mailto:${intern.email}">${intern.email}</a></p>
+            <p><i class="fa-solid fa-graduation-cap"></i> | ${intern.school}</p>
         </div>
 
     </div>
