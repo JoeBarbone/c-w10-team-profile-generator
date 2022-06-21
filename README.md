@@ -5,6 +5,8 @@ AS A manager
 I WANT to generate a webpage that displays my team's basic info  
 SO THAT I have quick access to their emails and GitHub profiles  
 
+---
+
 ## <span style="color: cyan;">Acceptance Criteria</span>
 GIVEN a command-line application that accepts user input  
 WHEN I am prompted for my team members and their information  
@@ -24,6 +26,11 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team  
 THEN I exit the application, and the HTML is generated  
 
+---
+
+## <span style="color: cyan;">Screencastify/Videos</span>
+[Week 10 Challenge - Team Profile Generator](https://drive.google.com/file/d/1BdlMUZ_Fw3kyf4id_qzScJp1fzHQ8BJW/view)
+
 ## <span style="color: cyan;">Screenshots</span>
 Screenshot main desktop
 ![screenshot desktop](images/screenshot-desktop-main.jpg)
@@ -34,6 +41,8 @@ Screenshot main mobile
 Screenshot page two mobile  
 ![screenshot mobile](images/screenshot-mobile-page2.jpg)
 
+---
+
 ## <span style="color: cyan;">Summary/Languages</span>
 ![html 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css 3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
@@ -41,9 +50,7 @@ Screenshot page two mobile
 
 ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white) ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-
-
-
+---
 
 ## <span style="color: cyan;">Acknowledgements</span>
 Concept provided by UCF/2U Educational Services.  
